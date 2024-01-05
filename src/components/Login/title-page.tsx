@@ -1,10 +1,10 @@
 "use client"
 import { motion } from "framer-motion";
 
-interface TitlePageLoginProps {
+interface TitlePageAuthProps {
     title: string;
 }
-export default function TitlePageLogin(props: TitlePageLoginProps) {
+export default function TitlePageAuth(props: TitlePageAuthProps) {
     return (
         <motion.h1
             className="text-white text-4xl font-mono"
