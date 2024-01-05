@@ -18,12 +18,12 @@ export default function LoginForm() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2 }}
         >
-            <motion.div
+            {/* <motion.div
                 className="absolute bg-gradient-to-tr from-emerald-300 top-20 via-emerald-500 to-emerald-700 right-16 blur-3xl w-60 h-60 -z-10"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.3, delay: 1.2 }}
-            />
+            /> */}
             <h1 className="text-center text-white text-lg font-mono">Bem vindo há Plataforma!</h1>
             <div className="flex flex-col gap-7">
                 <div className="flex flex-col gap-2">
@@ -44,7 +44,7 @@ export default function LoginForm() {
                                 <Eye className="absolute top-2 right-4 cursor-pointer text-white/50" size={22} weight="thin" onClick={() => setShowPassword(!showPassword)} />
                         }
                     </div>
-                    <span className="text-sm text-[#2C9C6A]">Não possui uma conta? <span className="underline cursor-pointer">Cadastre-se aqui </span></span>
+                    <span className="text-sm text-[#2C9C6A]">Não possui uma conta? <Link href="/auth/register" className="underline cursor-pointer">Cadastre-se aqui </Link></span>
                 </div>
                 <Button variant="primary">Login</Button>
             </div>
